@@ -8,11 +8,10 @@
 
 .pincode-body {
   text-align: center;
-  backgroung: #efefef;
+  background-color: red;
   width: 350px;
   height: 460px;
-  position: fixed;
-  color: #000000;
+  position: absolute;
 }
 
 .center {
