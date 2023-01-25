@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pincode</title>
-  </head>
-  <body>
+</head>
+<body>
     <h1 id="header">Header</h1>
     <div id="pincode" class="pincode-body>
-					<div class=" pincode-row">
-      <button onclick="inputnumber(1)">1</button>
-      <button onclick="inputnumber(2)">2</button>
-      <button onclick="inputnumber(3)">3</button>
-    </div>
-    <div class="pincode-row">
-      <button onclick="inputnumber(4)">4</button>
-      <button onclick="inputnumber(5)">5</button>
-      <button onclick="inputnumber(6)">6</button>
-    </div>
-    <div class="pincode-row">
-      <button onclick="inputnumber(7)">7</button>
-      <button onclick="inputnumber(8)">8</button>
-      <button onclick="inputnumber(9)">9</button>
-    </div>
-    <div class="pincode-row">
-      <button onclick="delete()" class="button">⌫</button>
-      <button onclick="inputnumber(0)">0</button>
-      <button onclick="submit()" class="button">✔</button>
-    </div>
-    </div>
-    <script>
-      var userinput = "";
+        <div class="pincode-row">
+            <button onclick="inputnumber(1)">1</button>
+            <button onclick="inputnumber(2)">2</button>
+            <button onclick="inputnumber(3)">3</button>
+        </div>
+        <div class="pincode-row">
+            <button onclick="inputnumber(4)">4</button>
+            <button onclick="inputnumber(5)">5</button>
+            <button onclick="inputnumber(6)">6</button>
+        </div>
+        <div class="pincode-row">
+            <button onclick="inputnumber(7)">7</button>
+            <button onclick="inputnumber(8)">8</button>
+            <button onclick="inputnumber(9)">9</button>
+        </div>
+         <div class="pincode-row">
+             <button class="button">⌫</button>
+             <button onclick="inputnumber(0)">0</button>
+             <button onclick="submit()" class="button">✔</button>
+     <script>
+         var userinput = "";
 
-      function inputnumber(number) {
-        userinput = userinput + number;
-        document.getElementById("header").innerHTML = userinput;
-      }
+        function inputnumber(number) {
+            userinput = userinput + number;    
+            document.getElementById("header").innerHTML = userinput;
+         }
 
-      function submit() {
-        window.location = "https://" + input + ".com";
-      }
-
-      function delete() {
-        userinput = userinput.substring(0, userinput.length - 1);
-        document.getElementById("header").innerHTML = userinput;
-      }
-    </script>
-  </body>
+         function submit() {
+             window.location = "https://" + input + ".com";
+         }
+     </script>
+ </body>
 </html>
