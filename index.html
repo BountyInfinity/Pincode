@@ -38,6 +38,11 @@
          function submit() {
              window.location = "https://" + input + ".com";
          }
-     </script>
- </body>
+                                                          
+        function delete() {
+            userinput = userinput.substring(0, userinput.length - 1);
+            document.getElementById("header").innerHTML = userinput;
+        }
+    </script>
+</body>
 </html>
