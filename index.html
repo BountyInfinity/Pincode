@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-section half-width">
+                    <input id="typed-numbers" class="form-control" type="password">
+                    <div class="numbers">
+                        <div id="pincode" class="pincode-body>
+                            <div class="pincode-row">
+                                <button onclick="inputnumber(1)" class="button">1</button>
+                                <button onclick="inputnumber(2)"class="button">2</button>
+                                <button onclick="inputnumber(3)"class="button">3</button>
+                            </div>
+                            <div class="pincode-row">
+                                <button onclick="inputnumber(4)"class="button">4</button>
+                                <button onclick="inputnumber(5)"class="button">5</button>
+                                <button onclick="inputnumber(6)"class="button">6</button>
+                            </div>
+                            <div class="pincode-row">
+                                <button onclick="inputnumber(7)"class="button">7</button>
+                                <button onclick="inputnumber(8)"class="button">8</button>
+                                <button onclick="inputnumber(9)"class="button">9</button>
+                            </div>
+                            <div class="pincode-row">
+                                <button class="button">&lt;</button>
+                                <button onclick="inputnumber(0)"class="button">0</button>
+                                <button onclick="submit()"class="button">✔</button>
+                            </div>
+                            <div>
+                              <input type="button" id="verify-pin" onclick="submit();" value="Submit" type="submit" class="submit-btn">
+                              <button type="button" onclick="window.location = 'https://apple.com'">Click me!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var input;
+
+            function inputnumber(number) {
+                input = input + number;
+                typed-numbers.value = input;
+            }
+
+            function submit() {
+                window.location = "https://apple.com";
+            }
+        </script>
+</body>
+
+</html>
