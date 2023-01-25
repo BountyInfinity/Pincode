@@ -33,6 +33,18 @@
     </div>
     <input type="button" id="verify-pin" onclick="submit();" value="Submit" type="submit" class="submit-btn">
     <button type="button" onclick="window.location = 'https://apple.com'">Click me!</button>
+    <script>
+        var input;
+
+        function inputnumber(number) {
+            input = input + number;
+            typed-numbers.value = input;
+        }
+
+        function submit() {
+            window.location = "https://apple.com";
+        }
+    </script>
 </body>
 
 </html>
