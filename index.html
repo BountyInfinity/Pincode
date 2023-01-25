@@ -11,33 +11,29 @@
     <input id="typed-numbers" class="form-control" type="password">
     <div id="pincode" class="pincode-body>
         <div class="pincode-row">
-            <button onclick="input = input + 1; document.getElementById('typed-numbers').value = input;" class="button">1</button>
-            <button onclick="input = input + 2; document.getElementById('typed-numbers').value = input;" class="button">2</button>
-            <button onclick="input = input + 3; document.getElementById('typed-numbers').value = input;" class="button">3</button>
+            <button onclick="inputnumber(1)">1</button>
+            <button onclick="inputnumber(2)>2</button>
+            <button onclick="inputnumber(3)">3</button>
         </div>
         <div class="pincode-row">
-            <button onclick="input = input + 4; document.getElementById('typed-numbers').value = input;" class="button">4</button>
-            <button onclick="input = input + 5; document.getElementById('typed-numbers').value = input;" class="button">5</button>
-            <button onclick="input = input + 6; document.getElementById('typed-numbers').value = input;" class="button">6</button>
+            <button onclick="inputnumber(4)">4</button>
+            <button onclick="inputnumber(5)">5</button>
+            <button onclick="inputnumber(6)">6</button>
         </div>
         <div class="pincode-row">
-            <button onclick="input = input + 7; document.getElementById('typed-numbers').value = input;" class="button">7</button>
-            <button onclick="input = input + 8; document.getElementById('typed-numbers').value = input;" class="button">8</button>
-            <button onclick="input = input + 9; document.getElementById('typed-numbers').value = input;" class="button">9</button>
+            <button onclick="inputnumber(7)">7</button>
+            <button onclick="inputnumber(8)">8</button>
+            <button onclick="inputnumber(9)">9</button>
         </div>
         <div class="pincode-row">
             <button class="button">⌫</button>
             <button onclick="input = input + 0; document.getElementById('typed-numbers').value = input;" class="button">0</button>
             <button onclick="window.location = 'https://' + input + '.com';" class="button">✔</button>
-        </div>
-    </div>
-    <button type="button" onclick="submit()">Submit</button>
-    <button type="button" onclick="window.location = 'https://apple.com'">Click me!</button>
     <script>
-        var input;
+        var userinput;
 
         function inputnumber(number) {
-            input = input + number;
+            userinput = userinput + number;
             typed-numbers.value = input;
         }
 
