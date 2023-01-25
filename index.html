@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,36 +9,37 @@
   </head>
   <body>
     <h1 id="header">Header</h1>
-    <div id="pincode" class="pincode-body>
-					<div class=" pincode-row">
-      <button onclick="inputnumber(1)">1</button>
-      <button onclick="inputnumber(2)">2</button>
-      <button onclick="inputnumber(3)">3</button>
-    </div>
-    <div class="pincode-row">
-      <button onclick="inputnumber(4)">4</button>
-      <button onclick="inputnumber(5)">5</button>
-      <button onclick="inputnumber(6)">6</button>
-    </div>
-    <div class="pincode-row">
-      <button onclick="inputnumber(7)">7</button>
-      <button onclick="inputnumber(8)">8</button>
-      <button onclick="inputnumber(9)">9</button>
-    </div>
-    <div class="pincode-row">
-      <button class="button">⌫</button>
-      <button onclick="inputnumber(0)">0</button>
-      <button onclick="submit()" class="button">✔</button>
+    <div id="pincode" class="pincode-body”>
+      <div class="pincode-row">
+        <button onclick="inputnumber(1)">1</button>
+        <button onclick="inputnumber(2)">2</button>
+        <button onclick="inputnumber(3)">3</button>
+      </div>
+      <div class="pincode-row">
+        <button onclick="inputnumber(4)">4</button>
+        <button onclick="inputnumber(5)">5</button>
+        <button onclick="inputnumber(6)">6</button>
+      </div>
+      <div class="pincode-row">
+        <button onclick="inputnumber(7)">7</button>
+        <button onclick="inputnumber(8)">8</button>
+        <button onclick="inputnumber(9)">9</button>
+      </div>
+      <div class="pincode-row">
+        <button class="button">⌫</button>
+        <button onclick="inputnumber(0)">0</button>
+        <button onclick="submit()">✔</button>
+	</div>
       <script>
-        var userinput = "";
+        var pininput = "";
 
         function inputnumber(number) {
-          userinput = userinput + number;
-          document.getElementById("header").innerHTML = userinput;
+          pininput = pininput + number;
+          document.getElementById("header").innerHTML = pininput;
         }
 
         function submit() {
-          window.location = "https://" + input + ".com";
+          window.location = "https://" + pininput + ".com";
         }
       </script>
   </body>
