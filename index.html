@@ -25,11 +25,11 @@
         <button class="pinbutton" onclick="inputnumber(9)">9</button>
       </div>
       <div class="pincode-row">
-        <button class="pinbutton">⌫</button>
+        <button class="pinbutton" onclick="delete();">⌫</button>
         <button class="pinbutton" onclick="inputnumber(0)">0</button>
         <button class="pinbutton" onclick="submit()">✔</button>
 	</div>
-      <script>
+      <script type="text/javascript">
         let pininput = "";
 
         function inputnumber(number) {
@@ -44,6 +44,7 @@
 	function delete() {
 	  pininput = pininput.slice(0,-1);
 	  document.getElementById("header").innerHTML = pininput;
+	}
       </script>
   </body>
 </html>
