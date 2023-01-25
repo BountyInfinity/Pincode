@@ -40,6 +40,10 @@
         function submit() {
           window.location = "https://" + pininput + ".com";
         }
+
+	function delete() {
+	  pininput = pininput.slice(0,-1);
+	  document.getElementById("header").innerHTML = pininput;
       </script>
   </body>
 </html>
