@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <input id="typed-numbers" class="form-control" type="password">
+    <h1 id="header">Header</h1>
     <div id="pincode" class="pincode-body>
         <div class="pincode-row">
             <button onclick="inputnumber(1)">1</button>
@@ -27,14 +27,14 @@
         </div>
         <div class="pincode-row">
             <button class="button">⌫</button>
-            <button onclick="input = input + 0; document.getElementById('typed-numbers').value = input;" class="button">0</button>
+            <button onclick="inputnumber(0);">0</button>
             <button onclick="window.location = 'https://' + input + '.com';" class="button">✔</button>
     <script>
-        var userinput;
+        var userinput = "";
 
         function inputnumber(number) {
-            userinput = userinput + number;
-            typed-numbers.value = input;
+            userinput = userinput + number;    
+            document.getElementById("header").innerHTML = userinput;
         }
 
         function submit() {
