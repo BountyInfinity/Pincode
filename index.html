@@ -29,6 +29,8 @@
             <button class="button">⌫</button>
             <button onclick="inputnumber(0)">0</button>
             <button onclick="submit()" class="button">✔</button>
+        </div>
+    </div>
     <script>
         var userinput = "";
 
@@ -39,6 +41,11 @@
 
         function submit() {
             window.location = "https://" + input + ".com";
+        }
+        
+        function delete() {
+            userinput = userinput.substring(0, userinput.length-1);
+            document.getElementById("header").innerHTML = userinput;
         }
     </script>
 </body>
