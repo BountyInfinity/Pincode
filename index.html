@@ -28,19 +28,20 @@
         <button class="pinbutton" onclick="delete();">⌫</button>
         <button class="pinbutton" onclick="inputnumber(0)">0</button>
         <button class="pinbutton" onclick="submit()">✔</button>
-	</div>
-      <script type="text/javascript">
-        let pininput = "";
+      </div>
+    </div>
+    <script type="text/javascript">
+      let pininput = "";
 
-        function inputnumber(number) {
-          pininput = pininput + number;
-          document.getElementById("header").innerHTML = pininput;
-        }
+      function inputnumber(number) {
+        pininput = pininput + number;
+        document.getElementById("header").innerHTML = pininput;
+      }
 
-        function delete() {
-          pininput = pininput.slice(0,-1);
-	  document.getElementById("header").innerHTML = pininput;
-        }
-      </script>
+      function delete() {
+        pininput = pininput.slice(0,-1);
+	document.getElementById("header").innerHTML = pininput;
+      }
+    </script>
   </body>
 </html>
